@@ -5916,9 +5916,8 @@ input:focus-visible {
 
     .banner-desk {
         margin-block-start: -190px !important;
-        width: 1350px;
+        width: 100%; max-width: 1350px;
         text-align: center;
-        display: none;
     }
 
     .carousel-item-next,
@@ -10705,9 +10704,9 @@ input:focus-visible {
 @media (max-width: 1199px) {
     .banner-desk {
         margin-block-start: -350px;
-        width: 1350px;
+        width: 100%; max-width: 1350px;
         text-align: center;
-        display: none;
+        display: block;
     }
 
     .about-three-area {
@@ -11038,7 +11037,7 @@ input:focus-visible {
         padding: 200px 0 120px;
     } */
     .banner-desk {
-        display: none;
+        display: block;
     }
 
     .about-three-area {
@@ -11407,7 +11406,7 @@ input:focus-visible {
     .container-sm,
     .container-xl,
     .container-xxl {
-        max-width: 1350px;
+        max-width: 100%; max-width: 1350px;
     }
 }
 
@@ -11741,7 +11740,7 @@ input:focus-visible {
 
 .banner-desk {
     margin-block-start: -150px;
-    width: 1350px;
+    width: 100%; max-width: 1350px;
     text-align: center;
 }
 
@@ -13315,6 +13314,9 @@ padding-top: 15px;
         display: none;
     }
 }
+
+
+
 
 
 

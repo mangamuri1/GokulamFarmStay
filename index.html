@@ -1567,12 +1567,12 @@
         let totalWidth = track.scrollWidth - window.innerWidth;
 
         gsap.to(track, {
-            x: () => -totalWidth,
+            x: () => -(track.scrollWidth - window.innerWidth), invalidateOnRefresh: true,
             ease: "none",
             scrollTrigger: {
                 trigger: ".sm-pro-section",
                 start: "top top",
-                end: () => "+=" + totalWidth,
+                end: () => "+=" + (track.scrollWidth - window.innerWidth),
                 pin: true,
                 scrub: 1,
                 snap: {
@@ -1590,6 +1590,7 @@
 
 
 </body></html>
+
 
 
 
