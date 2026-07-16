@@ -7979,7 +7979,7 @@ input:focus-visible {
 
 @media screen and (max-width: 767px) {
     .section-two-title {
-        font-size: 23px;
+        font-size: 16px;
     }
 
     .ph-check {
@@ -8050,7 +8050,7 @@ input:focus-visible {
     }
 
     .tw-text-16 {
-        font-size: 23px;
+        font-size: 16px;
         margin-bottom: 25px;
         color: hsl(var(--heading-color)) !important;
         margin-top: 15px;
@@ -9132,7 +9132,7 @@ input:focus-visible {
 
 @media screen and (max-width: 1399px) {
     .package-title {
-        font-size: 23px;
+        font-size: 16px;
         margin-bottom: 4px;
     }
 }
@@ -11432,8 +11432,8 @@ input:focus-visible {
 }
 
 .footer-bottom-social li a {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     /* background: #3c3c48; */
     border: 1px solid #fff;
     color: #fff;
@@ -12792,13 +12792,13 @@ body.sf-body {
 }
 
 .sf-icon {
- width: 45px;
-    height: 45px;
+ width: 32px;
+    height: 32px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 23px;
+    font-size: 16px;
 }
 
 .sf-icon--green { background: #e6f1ed; color: #1f5f4a; }
@@ -12949,8 +12949,8 @@ padding-top: 15px;
     top: 100%;
     transform: translateY(50%);
     
-    width: 45px;
-    height: 45px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     border: none;
     
@@ -13023,8 +13023,8 @@ padding-top: 15px;
     top: 100%;
     transform: translateY(50%);
     
-    width: 45px;
-    height: 45px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     border: none;
     
@@ -13140,8 +13140,8 @@ padding-top: 15px;
     top: 100%;
     transform: translateY(10%);
     
-    width: 45px;
-    height: 45px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     border: none;
     
@@ -13191,13 +13191,13 @@ padding-top: 15px;
     font-size: 16px;
 }
 .sf-icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .sf-people {
@@ -13314,6 +13314,7 @@ padding-top: 15px;
         display: none;
     }
 }
+
 
 
 
