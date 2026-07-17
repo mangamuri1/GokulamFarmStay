@@ -1458,29 +1458,11 @@
             
             const finalizeSubmission = () => {
                 if(submitBtn) submitBtn.innerHTML = originalBtnText;
-                // Format message (clean & readable)
-                const text =
-                    `🌿 *Gokulam Farm Stay Booking Enquiry*
-
-👤 Name: ${name}
-📞 Mobile: ${phone}
-📧 Email: ${email}
-
-📅 Check-in: ${checkin}
-📅 Check-out: ${checkout}
-
-🎉 Booking Type: ${bookingType}
-
-📝 Message: ${message}`;
-
-                // WhatsApp number (with country code, no +)
-                const whatsappNumber = "917799499616";
-
-                // Encode message properly
-                const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
-
-                // Open WhatsApp
-                window.open(url, "_blank");
+                
+                // Show success message and reset form instead of opening WhatsApp
+                alert("Thank you! Your booking request has been received. Our team will contact you shortly.");
+                form.reset();
+                if(typeof closeForm === 'function') closeForm();
             };
 
             // Submit to Google Sheets, then open WhatsApp
