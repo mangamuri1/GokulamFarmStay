@@ -7,7 +7,8 @@ var tl = gsap.timeline();
 gsap.registerPlugin(ScrollTrigger, SplitText);
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-
+// Prevent GSAP from forcefully recalculating and jumping scroll position during zoom (resize events)
+ScrollTrigger.config({ autoRefreshEvents: "visibilitychange,DOMContentLoaded,load" });
 
 // =================================== Smooth Scroller Js Start =====================================
 const smoother = ScrollSmoother.create({

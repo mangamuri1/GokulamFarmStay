@@ -13324,3 +13324,7 @@ padding-top: 15px;
 
 
 
+
+/* Prevent horizontal scroll layout jumps on zoom */
+html, body { overflow-x: hidden; }
+
