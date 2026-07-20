@@ -10,15 +10,8 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 // Prevent GSAP from forcefully recalculating and jumping scroll position during zoom (resize events)
 ScrollTrigger.config({ autoRefreshEvents: "visibilitychange,DOMContentLoaded,load" });
 
-// =================================== Smooth Scroller Js Start =====================================
-const smoother = ScrollSmoother.create({
-  content: "#scrollSmoother-container",
-  smooth: 1,
-  effects: true,
-  smoothTouch: false,
-  ease: 'power4.out',
-  normalizeScroll: false
-});
+// Removed ScrollSmoother to fix native browser zoom layout jumping
+// CSS native scroll-behavior: smooth is now handling this.
 
 
  // Section title Js
