@@ -14,8 +14,9 @@ const smoother = ScrollSmoother.create({
   content: "#scrollSmoother-container",
   smooth: 1,
   effects: true,
-  smoothTouch: 0.1,
+  smoothTouch: false,
   ease: 'power4.out',
+  normalizeScroll: false
 });
 
 
