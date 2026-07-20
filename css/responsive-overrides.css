@@ -1,0 +1,111 @@
+/* --- GLOBAL RESPONSIVE OVERRIDES --- */
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden !important;
+}
+
+/* Ensure images never stretch and maintain aspect ratio */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+}
+
+/* Base Typography fluid scaling override */
+h1, .h1 { font-size: clamp(2rem, 5vw, 4.25rem) !important; line-height: 1.2; }
+h2, .h2 { font-size: clamp(1.75rem, 4vw, 2.875rem) !important; line-height: 1.3; }
+h3, .h3 { font-size: clamp(1.5rem, 3vw, 2.5rem) !important; line-height: 1.4; }
+h4, .h4 { font-size: clamp(1.25rem, 2.5vw, 2rem) !important; line-height: 1.4; }
+p, .body-text { font-size: clamp(1rem, 1.5vw, 1.125rem); line-height: 1.6; }
+
+/* General Grid and Container Fixes */
+.container, .container-fluid, .container-01 {
+    width: 100%;
+    max-width: 100%;
+    padding-right: var(--bs-gutter-x, 15px);
+    padding-left: var(--bs-gutter-x, 15px);
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+@media (min-width: 576px) { .container { max-width: 540px; } }
+@media (min-width: 768px) { .container { max-width: 720px; } }
+@media (min-width: 992px) { .container { max-width: 960px; } }
+@media (min-width: 1200px) { .container { max-width: 1140px; } }
+@media (min-width: 1400px) { .container { max-width: 1320px; } }
+
+/* Hero Banner Fix */
+.banner-three-area, .carousel-item {
+    min-height: 100vh;
+    height: 100%;
+}
+.banner-three-area img {
+    height: 100vh !important;
+    object-fit: cover !important;
+}
+
+/* Booking Form (Checkout) Grid */
+.checkout-main-wrapper {
+    display: grid !important;
+    gap: 20px !important;
+    align-items: end !important;
+    width: 100%;
+}
+@media (min-width: 1024px) {
+    .checkout-main-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .checkout-main-wrapper {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+@media (max-width: 767px) {
+    .checkout-main-wrapper {
+        grid-template-columns: 1fr !important;
+    }
+}
+.checkout-wrapper {
+    max-width: 100% !important;
+    width: 100% !important;
+    border-right: none !important;
+}
+
+/* Fix Cards and Grid Rows */
+.row {
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.card, .section-wrapper, .item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contact and Footer spacing */
+.footer-area {
+    width: 100%;
+    overflow: hidden;
+}
+.footer-widget {
+    margin-bottom: clamp(20px, 4vw, 40px);
+}
+
+/* Floating WhatsApp & Instagram Buttons */
+.whatsapp-float, .insta-float {
+    position: fixed !important;
+    bottom: clamp(10px, 3vw, 30px) !important;
+    right: clamp(10px, 3vw, 30px) !important;
+    width: clamp(40px, 10vw, 60px) !important;
+    height: clamp(40px, 10vw, 60px) !important;
+    z-index: 9999 !important;
+}
+.insta-float {
+    bottom: clamp(60px, 10vw, 100px) !important; /* Stack above whatsapp */
+}
+
+/* Remove hardcoded dimensions */
+.w-100 { width: 100% !important; }
+.h-100 { height: 100% !important; }
