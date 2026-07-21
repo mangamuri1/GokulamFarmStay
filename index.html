@@ -35,6 +35,49 @@
 
     <link rel="stylesheet" href="css/all.min.css">
 
+    <style>
+        .footer-contact-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer-contact-block {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+        .footer-contact-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            white-space: nowrap;
+        }
+        .footer-contact-icon {
+            width: 24px;
+            display: flex;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        @media (max-width: 767px) {
+            .footer-three-col-1, .footer-three-col-3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center !important;
+                text-align: center;
+            }
+            .footer-three-col-1 ul.d-flex {
+                align-items: center !important;
+            }
+            .footer-bottom-social {
+                justify-content: center !important;
+            }
+            .footer-bottom-wrap {
+                justify-content: center !important;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-neutral-400 @@bodyClass">
@@ -1104,11 +1147,17 @@
                                     <div class="our-location__inner position-relative h-100 d-flex flex-column">
                                         <iframe src="https://maps.google.com/maps?q=17.746358848330107,78.59612356807244&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="100%" class="flex-grow-1" style="border:0; border-radius: 1.5rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                         
-                                        <div class="text-center tw-mt-8">
-                                            <a href="https://www.google.com/maps/dir/?api=1&destination=17.746358848330107,78.59612356807244" target="_blank" class="tw-btn-hover-yellow bg-main-three-600 tw-py-4 tw-px-11 text-capitalize text-white font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-md">
-                                                <i class="fas fa-map-marker-alt"></i> Get Directions &amp; View Route Map
+                                        <div class="text-center tw-mt-8 d-flex flex-column align-items-center tw-gap-4">
+                                            <div>
+                                                <a href="https://www.google.com/maps/dir/?api=1&destination=17.746358848330107,78.59612356807244" target="_blank" class="tw-btn-hover-yellow bg-main-three-600 tw-py-4 tw-px-11 text-capitalize text-white font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-md">
+                                                    <i class="fas fa-map-marker-alt"></i> Get Directions &amp; View Route Map
+                                                </a>
+                                                <p class="tw-mt-2 text-neutral-800">Click to find the distance from your current location and navigate to Gokulam Farm Stay.</p>
+                                            </div>
+                                            
+                                            <a href="https://www.instagram.com/Gokulamfarmstay/" target="_blank" class="tw-btn-hover-yellow tw-py-4 tw-px-11 text-capitalize text-white font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-md" style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border: none;">
+                                                <i class="fab fa-instagram tw-text-xl"></i> Follow us on Instagram
                                             </a>
-                                            <p class="tw-mt-2 text-neutral-800">Click to find the distance from your current location and navigate to Gokulam Farm Stay.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1301,19 +1350,21 @@
                                 </div>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-xs-12 aos-init aos-animate" data-aos="fade-up" data-aos-duration="400">
-                                <div class="footer-three-col-2 tw_fade_anim" data-delay=".5" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-                                    <h2>Contact</h2>
-                                    <div class="footer-three-address text-center">
-                                        <div class="d-inline-block" style="text-align: left !important;">
-                                            <a class="footer-three-telk font-heading fw-normal tw-text-12 text-white hover-text-main-three-600 d-block" href="tel:+917799499616">+91 77994 99616</a>
-                                            <a class="footer-three-telk font-heading fw-normal tw-text-12 text-white hover-text-main-three-600 d-block tw-mb-4" href="tel:+919701400144">+91 97014 00144</a>
+                                <div class="footer-three-col-2 tw_fade_anim footer-contact-wrapper" data-delay=".5" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+                                    <div class="footer-contact-block">
+                                        <h2>Contact</h2>
+                                        <div class="footer-contact-row">
+                                            <span class="text-white footer-contact-icon">📞</span>
+                                            <a class="font-heading fw-normal tw-text-12 text-white hover-text-main-three-600" href="tel:+917799499616">+91 77994 99616</a>
                                         </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between-1 flex-wrap row-gap-3">
-                                        <div>
-                                            <span class="text-white d-inline-flex justify-content-start"> <a href="https://www.google.com/maps?q=17.746358848330107,78.59612356807244" target="_blank">Tunkhikhalsa, Gajwel 502336</a></span>
+                                        <div class="footer-contact-row">
+                                            <span class="text-white footer-contact-icon">📞</span>
+                                            <a class="font-heading fw-normal tw-text-12 text-white hover-text-main-three-600" href="tel:+919701400144">+91 97014 00144</a>
                                         </div>
-
+                                        <div class="footer-contact-row">
+                                            <span class="text-white footer-contact-icon">📍</span>
+                                            <a class="font-heading fw-normal text-white hover-text-main-three-600" href="https://www.google.com/maps?q=17.746358848330107,78.59612356807244" target="_blank">Tunkhikhalsa, Gajwel 502336</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1503,14 +1554,46 @@
         }
     </script>
 
-    <!-- contact form script  -->
+    <!-- date picker and validation script  -->
     <script>
-        document.getElementById("checkin").addEventListener("click", function () {
-            this.showPicker();
-        });
+        document.addEventListener('DOMContentLoaded', function() {
+            // Make click open picker for all date inputs
+            document.querySelectorAll('input[type="date"]').forEach(input => {
+                input.addEventListener("click", function () {
+                    if (typeof this.showPicker === 'function') {
+                        this.showPicker();
+                    }
+                });
+            });
 
-        document.getElementById("checkout").addEventListener("click", function () {
-            this.showPicker();
+            const checkinInputs = document.querySelectorAll('input[name="checkin"]');
+            
+            // Set today as minimum for checkin
+            const today = new Date().toISOString().split('T')[0];
+            
+            checkinInputs.forEach((checkin) => {
+                checkin.min = today;
+                
+                // Find corresponding checkout in the same form/container
+                const container = checkin.closest('form') || checkin.closest('.form-check-group') || document;
+                const checkout = container.querySelector('input[name="checkout"]');
+                
+                if (checkout) {
+                    checkin.addEventListener('change', function() {
+                        if (this.value) {
+                            const checkinDate = new Date(this.value);
+                            checkinDate.setDate(checkinDate.getDate() + 1);
+                            const minCheckoutStr = checkinDate.toISOString().split('T')[0];
+                            
+                            checkout.min = minCheckoutStr;
+                            
+                            if (checkout.value && checkout.value <= this.value) {
+                                checkout.value = minCheckoutStr;
+                            }
+                        }
+                    });
+                }
+            });
         });
     </script>
 
