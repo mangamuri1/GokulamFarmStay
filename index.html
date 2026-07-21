@@ -157,7 +157,7 @@
                     </a>
                     <div class="header-button header-two-button">
                         <button class="tw-btn-hover-yellow bg-white tw-py-4 tw-px-11 text-capitalize text-heading font-heading d-inline-flex align-items-center tw-gap-2 enquiry-btn" onclick="openForm()">
-                            BOOKING NOW
+                            BOOK NOW
                         </button>
 
 
@@ -493,7 +493,7 @@
 
                         <button type="button" class=" sf-btn sf-btn--green  tw-py-5 tw-px-12 w-100 text-capitalize text-heading font-heading 
                             d-inline-flex align-items-center justify-content-center text-center tw-gap-2 tw-rounded-lg" onclick="openForm()">
-                            BOOKING NOW <i class="ph ph-arrow-right"></i>
+                            BOOK NOW <i class="ph ph-arrow-right"></i>
                         </button>
                     </div>
 
@@ -516,7 +516,7 @@
                     <!-- <div class="col-xl-3 col-lg-4">
                         <div class="gallery-two-btn d-flex justify-content-end tw_fade_anim" data-delay=".5">
                             <a class="tw-btn-hover-yellow bg-white tw-py-5 tw-px-12 text-uppercase text-heading font-heading d-inline-flex align-items-center tw-gap-2"
-                                onclick="openForm()">Booking Now</a>
+                                onclick="openForm()">Book Now</a>
                         </div>
                     </div> -->
                 </div>
@@ -739,7 +739,8 @@
             </div>
         </section> -->
 
-        <section class="package-four-area tw-pb-10 position-relative z-1 bg-white" id="amenities">
+        <div id="amenities">
+        <section class="package-four-area tw-pb-10 position-relative z-1 bg-white">
             <div class="container">
                 <div class="row justify-content-between align-items-center tw-mb-14">
                     <div class="col-xl-8 col-lg-8">
@@ -869,7 +870,7 @@
 
 
 
-        <section class="sm-pro-section" id="amenities">
+        <section class="sm-pro-section">
             <div class="container">
 
 
@@ -955,6 +956,7 @@
 
 
         </section>
+        </div>
 
 
         <!-- amenities icon section  -->
@@ -1013,26 +1015,22 @@
             </ul>
         </div>
 
-        <!-- background image section  -->
-        <div class="marquee-three-2-bg">
-            <img src="images/marquee-three-2-bg3.jpg" alt="bg">
-        </div>
+
 
         <!-- contact section  -->
         <section class="contact-four-area position-relative" id="contact">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-xl-10">
+                    <div class="col-xl-12">
                         <div class="contact-four-wrapper tw-pt-25 tw-pb-13 tw-px-18 tw-rounded-3xl">
                             <div class="section-two-wrapper text-center tw-mb-14">
-                                <h6 class="section-two-subtitle tw-text-xl text-neutral-800 text-uppercase tw-mb-6">Get
-                                    in Touch</h6>
-                                <h2 class="section-two-title tw-text-16 fw-normal tw-char-animation">Connect with us and
-                                    plan your perfect getaway.</h2>
+                                <h6 class="section-two-subtitle tw-text-xl text-neutral-800 text-uppercase tw-mb-6">Location & Contact</h6>
+                                <h2 class="section-two-title tw-text-16 fw-normal tw-char-animation">Find us or get in touch for a perfect getaway.</h2>
                             </div>
-                            <div class="">
-                                <form action="#" onsubmit="sendToWhatsApp(event)" method="post">
-                                    <div class="row gy-4 gx-3">
+                            <div class="row gy-5 align-items-stretch">
+                                <div class="col-xl-6 col-lg-6">
+                                    <form action="#" onsubmit="sendToWhatsApp(event)" method="post" class="h-100 d-flex flex-column justify-content-between">
+                                        <div class="row gy-4 gx-3">
 
                                         <!-- Name -->
                                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 contact-farm">
@@ -1101,6 +1099,19 @@
 
                                     </div>
                                 </form>
+                                </div>
+                                <div class="col-xl-6 col-lg-6" id="location">
+                                    <div class="our-location__inner position-relative h-100 d-flex flex-column">
+                                        <iframe src="https://maps.google.com/maps?q=17.746358848330107,78.59612356807244&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="100%" class="flex-grow-1" style="border:0; border-radius: 1.5rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        
+                                        <div class="text-center tw-mt-8">
+                                            <a href="https://www.google.com/maps/dir/?api=1&destination=17.746358848330107,78.59612356807244" target="_blank" class="tw-btn-hover-yellow bg-main-three-600 tw-py-4 tw-px-11 text-capitalize text-white font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-md">
+                                                <i class="fas fa-map-marker-alt"></i> Get Directions &amp; View Route Map
+                                            </a>
+                                            <p class="tw-mt-2 text-neutral-800">Click to find the distance from your current location and navigate to Gokulam Farm Stay.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1250,23 +1261,7 @@
             </div>
         </section>
 
-        <!-- location section  -->
-        <section class="our-location tw-pb-10" id="location">
-            <div class="container-01">
-                <div class="our-location__inner position-relative">
-                    <iframe src="https://maps.google.com/maps?q=Gokulam+Farm+Stay&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    
-                    <div class="text-center tw-mt-8">
-                        <a href="https://www.google.com/maps/dir/?api=1&destination=Gokulam+Farm+Stay" target="_blank" class="tw-btn-hover-yellow bg-main-three-600 tw-py-4 tw-px-11 text-capitalize text-white font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-md">
-                            <i class="fas fa-map-marker-alt"></i> Get Directions &amp; View Route Map
-                        </a>
-                        <p class="tw-mt-2 text-neutral-800">Click to find the distance from your current location and navigate to Gokulam Farm Stay.</p>
-                    </div>
-                </div>
-            </div>
 
-
-        </section>
 
         <!-- footer section  -->
         <footer class="footer footer-three-area position-relative z-1 overflow-hidden">
@@ -1316,7 +1311,7 @@
                                     </div>
                                     <div class="d-flex justify-content-between-1 flex-wrap row-gap-3">
                                         <div>
-                                            <span class="text-white d-inline-flex justify-content-start"> <a href="https://www.google.com/maps?q=17.74592144816989,78.59618782146724" target="_blank">Tunkhikhalsa, Gajwel 502336</a></span>
+                                            <span class="text-white d-inline-flex justify-content-start"> <a href="https://www.google.com/maps?q=17.746358848330107,78.59612356807244" target="_blank">Tunkhikhalsa, Gajwel 502336</a></span>
                                         </div>
 
                                     </div>
