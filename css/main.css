@@ -8514,52 +8514,28 @@ input:focus-visible {
 @media screen and (max-width: 1199px) {
     .checkout-main-wrapper {
         row-gap: 20px;
-        justify-content: center;
     }
 }
 
 @media screen and (max-width: 575px) {
     .checkout-main-wrapper {
         row-gap: 30px;
-        flex-direction: column;
-        align-items: stretch;
+        justify-content: center;
     }
 }
 
 .checkout-wrapper {
-    flex: 1 1 calc(20% - 20px);
-    min-width: 150px;
-    max-width: 100%;
+    flex: 1 1 150px;
+    max-width: 312px;
     width: 100%;
     border-right:0.8px solid rgb(235 235 235 / 46%);
-    padding-inline-end: 20px;
+    padding-inline-end: 30px;
     padding-inline-start: 13px;
-}
-
-@media screen and (max-width: 991px) {
-    .checkout-wrapper {
-        flex: 1 1 calc(33.333% - 20px);
-    }
 }
 
 @media screen and (max-width: 767px) {
     .checkout-wrapper {
-        flex: 1 1 calc(50% - 20px);
-        padding-inline-end: 10px;
-        padding-inline-start: 10px;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .checkout-wrapper {
-        flex: 1 1 100%;
-        border-right: none;
-        border-bottom: 0.8px solid rgb(235 235 235 / 46%);
-        padding-bottom: 15px;
-    }
-    .checkout-wrapper:last-child {
-        border-bottom: none;
-        padding-bottom: 0;
+        max-width: 230px;
     }
 }
 
@@ -13355,10 +13331,4 @@ html, body { overflow-x: hidden; }
 
 /* Prevent horizontal scroll layout jumps on zoom and add native smooth scrolling */
 html, body { overflow-x: hidden; scroll-behavior: smooth; }
-
-
-/* Safe Global Responsive Fixes */
-img:not(.max-w-200-px) { max-width: 100%; height: auto; }
-.card, .item { height: 100%; display: flex; flex-direction: column; }
-.banner-three-area img { width: 100%; object-fit: cover; }
 
