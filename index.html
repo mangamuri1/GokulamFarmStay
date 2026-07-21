@@ -271,16 +271,16 @@
                         <div class="form-group">
                             <label>Check In *</label>
                             <div class="input-icon">
-                                <input type="date" id="checkin" name="checkin" required="" onclick="openDatePicker('checkin')" class="checkout-date-input" placeholder="Check In">
-                                <span class="date-placeholder" onclick="openDatePicker('checkin')"></span>
+                                <input type="date" id="checkin" name="checkin" required="" onclick="this.showPicker()" class="checkout-date-input" placeholder="Check In">
+                                <span class="date-placeholder"></span>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label>Check Out *</label>
                             <div class="input-icon">
-                                <input type="date" id="checkout" name="checkout" required="" onclick="openDatePicker('checkout')" class="checkout-date-input">
-                                <span class="date-placeholder" onclick="openDatePicker('checkout')"></span>
+                                <input type="date" id="checkout" name="checkout" required="" onclick="this.showPicker()" class="checkout-date-input">
+                                <span class="date-placeholder"></span>
                             </div>
                         </div>
                     </div>
@@ -352,7 +352,7 @@
                                     </label>
                                     <div class="checkout-three-nice-select bg-transparent text-white date-picker-box">
                                         <input type="date" name="checkin" required="" onclick="this.showPicker()" class="checkout-date-input">
-                                        <span class="date-placeholder" onclick="openDatePicker('checkin')"></span>
+                                        <span class="date-placeholder"></span>
                                     </div>
                                 </div>
 
@@ -364,7 +364,7 @@
                                     </label>
                                     <div class="checkout-three-nice-select bg-transparent text-white date-picker-box">
                                         <input type="date" name="checkout" required="" onclick="this.showPicker()" class="checkout-date-input">
-                                        <span class="date-placeholder" onclick="openDatePicker('checkout')"></span>
+                                        <span class="date-placeholder"></span>
                                     </div>
                                 </div>
 

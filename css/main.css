@@ -11521,7 +11521,7 @@ input:focus-visible {
 .date-placeholder {
     color: #fff;
     font-size: 16px;
-    pointer-events: auto;
+    pointer-events: none;
     z-index: 1;
 }
 
