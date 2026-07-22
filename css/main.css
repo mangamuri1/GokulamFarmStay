@@ -12035,10 +12035,8 @@ input[type="date"]::-webkit-datetime-edit {
 
 /* icon alignment fix */
 input[type="date"]::-webkit-calendar-picker-indicator {
-    opacity: 0.8;
-    filter: brightness(0);
-    /* makes icon dark */
-    cursor: pointer;
+    display: none;
+    -webkit-appearance: none;
 }
 
 /* checkout-date-input indicator display none removed */
