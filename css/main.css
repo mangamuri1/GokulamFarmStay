@@ -11525,7 +11525,8 @@ input:focus-visible {
     z-index: 1;
 }
 
-.checkout-date-input.has-value+.date-placeholder {
+.checkout-date-input.has-value+.date-placeholder,
+.checkout-date-input:valid+.date-placeholder {
     opacity: 0;
     visibility: hidden;
 }
@@ -12027,25 +12028,17 @@ input[type="date"]::-webkit-datetime-edit {
 
 }
 
-/* icon alignment fix and mobile native picker trigger */
-input[type="date"] {
-    position: relative;
-}
+/* icon alignment fix */
 input[type="date"]::-webkit-calendar-picker-indicator {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
+    opacity: 0.8;
+    filter: brightness(0);
+    /* makes icon dark */
     cursor: pointer;
-    background: transparent;
-    color: transparent;
 }
 
 .checkout-date-input::-webkit-calendar-picker-indicator {
-    /* Override if needed, but the above ensures full clickability */
-    opacity: 0;
+    display: none;
+    -webkit-appearance: none;
 }
 
 .checkout-date-input {
