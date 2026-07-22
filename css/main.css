@@ -11532,10 +11532,15 @@ input:focus-visible {
 }
 
 .checkout-date-input::-webkit-calendar-picker-indicator {
-    opacity: 1;
-    cursor: pointer;
     position: absolute;
-    right: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
     z-index: 3;
 }
 
@@ -12036,10 +12041,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
 }
 
-.checkout-date-input::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
-}
+/* checkout-date-input indicator display none removed */
 
 .checkout-date-input {
     color: #000;
