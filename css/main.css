@@ -257,7 +257,7 @@
 .tw-btn-hover-yellow:hover,
 .tw-btn-hover-white:hover,
 .tw-btn-hover-black:hover {
-    color: hsl(var(--heading-color));
+    color: hsl(var(--heading-color)) !important;
 }
 
 .tw-btn-hover-yellow:hover::before,
