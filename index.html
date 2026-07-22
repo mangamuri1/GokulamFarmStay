@@ -531,7 +531,20 @@
                                 <li>🎵 Music System</li>
                                 <li>🎥 Projector</li>
                                 <li>🔥 Campfire Area</li>
+                                <li>🍳 Indoor Kitchen (Self Cooking)</li>
+                                <li>🎉 2500 Sq. Yards Open Area (For Events & Parties)</li>
                             </ul>
+
+                            <div style="margin-top: 15px; font-size: 16px; color: #4a4a4a;">
+                                <strong>🍽️ Nearby Restaurants (Home Delivery):</strong>
+                                <ul style="list-style: disc; padding-left: 20px; margin: 5px 0 0; font-size: 15px; line-height: 1.8; column-count: 2; column-gap: 20px;">
+                                    <li>Telangana Spice Kitchen</li>
+                                    <li>Raghavendra Tiffins</li>
+                                    <li>Green Aroma</li>
+                                    <li>Sree Godavari Ruchulu</li>
+                                    <li>Rajugari Vantillu</li>
+                                </ul>
+                            </div>
                         </div>
 
                         <button type="button" class=" sf-btn sf-btn--green  tw-py-5 tw-px-12 w-100 text-capitalize text-heading font-heading 
@@ -1554,7 +1567,11 @@
             document.querySelectorAll('input[type="date"]').forEach(input => {
                 input.addEventListener("click", function () {
                     if (typeof this.showPicker === 'function') {
-                        this.showPicker();
+                        try {
+                            this.showPicker();
+                        } catch (e) {
+                            // Ignore if browser throws error when native picker is already opening
+                        }
                     }
                 });
             });

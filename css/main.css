@@ -12027,17 +12027,25 @@ input[type="date"]::-webkit-datetime-edit {
 
 }
 
-/* icon alignment fix */
+/* icon alignment fix and mobile native picker trigger */
+input[type="date"] {
+    position: relative;
+}
 input[type="date"]::-webkit-calendar-picker-indicator {
-    opacity: 0.8;
-    filter: brightness(0);
-    /* makes icon dark */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
     cursor: pointer;
+    background: transparent;
+    color: transparent;
 }
 
 .checkout-date-input::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
+    /* Override if needed, but the above ensures full clickability */
+    opacity: 0;
 }
 
 .checkout-date-input {
