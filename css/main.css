@@ -12020,8 +12020,8 @@ input:focus-visible {
 
 /* make date text light like other inputs */
 input[type="date"] {
-    font-weight: 400 !important;
-    color: #fff !important;
+    font-weight: 400;
+    color: #fff;
     font-size: 14px;
     padding-inline-start: 15px;
 }
@@ -12042,7 +12042,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* checkout-date-input indicator display none removed */
 
 .checkout-date-input {
-    color: #000;
+    color: #000 !important;
+}
+
+.contact-input[type="date"] {
+    color: #000 !important;
 }
 
 .tw-text-16 span {
