@@ -13337,3 +13337,20 @@ html, body { overflow-x: hidden; }
 /* Prevent horizontal scroll layout jumps on zoom and add native smooth scrolling */
 html, body { overflow-x: hidden; scroll-behavior: smooth; }
 
+
+/* Logo Updates */
+.logo img {
+    background: transparent;
+    object-fit: contain;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
