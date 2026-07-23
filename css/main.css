@@ -7213,7 +7213,7 @@ input:focus-visible {
 }
 
 .header.fixed-header {
-    position: sticky;
+    position: fixed;
     inset-inline-start: 0;
     inset-block-start: 0;
     inset-inline-end: 0;
