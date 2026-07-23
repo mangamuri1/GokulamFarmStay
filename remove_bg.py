@@ -19,5 +19,5 @@ def remove_background(image_path, output_path, bg_color=(255, 255, 255), toleran
     img.putdata(new_data)
     img.save(output_path, "PNG")
 
-remove_background("images/Gokulam_Logo.png", "images/Gokulam_Logo.png")
+remove_background("images/Gokulam.Logo.png", "images/Gokulam.Logo.png")
 print("Background removed")
