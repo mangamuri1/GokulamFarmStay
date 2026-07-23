@@ -410,7 +410,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     yPercent: -5,
                     rotate: 2.41
                 }, "<")
-                ;
+                .from(items[4], {
+                    xPercent: -100,
+                    yPercent: 3,
+                    rotate: 5.39
+                }, "<");
         }
     });
 
