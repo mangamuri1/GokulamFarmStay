@@ -1648,8 +1648,20 @@
 
     <!-- header script  -->
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (window.location.pathname === '/aboutus') {
+                scrollToSection('about', null);
+            }
+        });
+
         function scrollToSection(sectionId, event) {
             if (event) event.preventDefault();
+
+            if (sectionId === 'about') {
+                history.pushState(null, '', '/aboutus');
+            } else if (sectionId === 'top') {
+                history.pushState(null, '', '/');
+            }
 
             if (sectionId === 'top') {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
