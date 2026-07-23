@@ -8,25 +8,25 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Escape to Gokulam Farm Stay, a heritage-style Manduva farmhouse near Shamirpet featuring 3 spacious bedrooms, an 800 sq. ft. grand hall, swimming pool, open sky courtyard, AC, Wi-Fi, Smart TV, projector, music system, campfire area, power backup, fridge, and geyser.">
+    <meta name="description" content="Traditional Manduva farmhouse near Shamirpet with pool, 3 bedrooms, event hall and wedding venue. Book your farm stay today.">
     <meta name="keywords" content="Gokulam Farm Stay, heritage Manduva farmhouse, Hyderabad farm stay, luxury Swimming Pool, outdoor events, farmhouse with pool, farmhouse Hyderabad">
     
     <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gokulam Farm Stay | Manduva Farm House Near Shamirpet">
-    <meta property="og:description" content="Escape to Gokulam Farm Stay, a heritage-style Manduva farmhouse near Shamirpet featuring 3 spacious bedrooms, an 800 sq. ft. grand hall, swimming pool, open sky courtyard, AC, Wi-Fi, Smart TV, projector, music system, campfire area, power backup, fridge, and geyser.">
+    <meta property="og:description" content="Traditional Manduva farmhouse near Shamirpet with pool, 3 bedrooms, event hall and wedding venue. Book your farm stay today.">
     <meta property="og:image" content="https://www.gokulamfarmstay.in/images/og-logo.jpg">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Gokulam Farm Stay | Manduva Farm House Near Shamirpet">
-    <meta name="twitter:description" content="Escape to Gokulam Farm Stay, a heritage-style Manduva farmhouse near Shamirpet featuring 3 spacious bedrooms, an 800 sq. ft. grand hall, swimming pool, open sky courtyard, AC, Wi-Fi, Smart TV, projector, music system, campfire area, power backup, fridge, and geyser.">
+    <meta name="twitter:description" content="Traditional Manduva farmhouse near Shamirpet with pool, 3 bedrooms, event hall and wedding venue. Book your farm stay today.">
     <meta name="twitter:image" content="https://www.gokulamfarmstay.in/images/og-logo.jpg">
     
     <meta name="robots" content="INDEX,FOLLOW">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://gokulam-farm-stay.vercel.app/" />
+    <link rel="canonical" href="https://www.gokulamfarmstay.in/" />
     <!-- Title -->
     <title>Gokulam Farm Stay | Manduva Farm House Near Shamirpet</title>
     <!-- Favicon -->
@@ -88,6 +88,39 @@
             }
         }
     </style>
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LodgingBusiness",
+          "@id": "https://www.gokulamfarmstay.in/#organization",
+          "name": "Gokulam Farm Stay",
+          "url": "https://www.gokulamfarmstay.in/",
+          "logo": "https://www.gokulamfarmstay.in/images/og-logo.jpg",
+          "image": "https://www.gokulamfarmstay.in/images/og-logo.jpg",
+          "description": "Traditional Manduva farmhouse near Shamirpet with pool, 3 bedrooms, event hall and wedding venue.",
+          "telephone": "+91-7799499616",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Shamirpet",
+            "addressRegion": "Telangana",
+            "addressCountry": "IN"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.gokulamfarmstay.in/#website",
+          "url": "https://www.gokulamfarmstay.in/",
+          "name": "Gokulam Farm Stay",
+          "publisher": {
+            "@id": "https://www.gokulamfarmstay.in/#organization"
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body class="bg-neutral-400 @@bodyClass">
@@ -240,7 +273,7 @@
 
     <!-- WhatsApp Floating Button -->
     <div class="floating_btn">
-        <a href="https://api.whatsapp.com/send?phone=917799499616&text=Hello,%20I%E2%80%99m%20looking%20to%20book%20a%20stay.%20Please%20share%20the%20details%20and%20availability%3F" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <a href="https://api.whatsapp.com/send?phone=917799499616&text=Hello,%20I%E2%80%99m%20looking%20to%20book%20a%20stay.%20Please%20share%20the%20details%20and%20availability%3F" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" data-track="whatsapp-click">
             <div class="contact_icon">
                 <i class="fab fa-whatsapp"></i>
             </div>
@@ -309,7 +342,7 @@
                             <textarea name="message" placeholder="Tell us about your stay, occasion, or any special requests..." required=""></textarea>
                         </div>
                     </div>
-                    <button type="submit" class="submit-btn">
+                    <button type="submit" class="submit-btn" data-track="booking-submission">
                         CONFIRM BOOKING
                     </button>
                 </form>
@@ -404,7 +437,7 @@
 
                                 <div class="checkout-wrapper">
                                     <div class="checkout-button common-hover-yellow">
-                                        <button type="submit" class="tw-btn-hover-white bg-main-three-600 tw-py-5 tw-px-7 text-uppercase text-white font-heading d-inline-flex align-items-center tw-gap-2">
+                                        <button type="submit" class="tw-btn-hover-white bg-main-three-600 tw-py-5 tw-px-7 text-uppercase text-white font-heading d-inline-flex align-items-center tw-gap-2" data-track="booking-submission">
                                             <p>CONFIRM BOOKING</p>
 
 
@@ -424,7 +457,7 @@
         <div id="mobileCarousel" class="carousel slide d-block d-md-none" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <!--<div class="carousel-item active carousel-item-start">-->
-                <!--    <img src="assets/img/sun-banner-mb-01.png" class="d-block w-100"-->
+                <!--    <img alt="sun-banner-mb-01" src="assets/img/sun-banner-mb-01.png" class="d-block w-100"-->
                 <!--        alt=" Gokulam Farm Stay Mobile Banner 1">-->
                 <!--</div>-->
                 <div class="carousel-item carousel-item-next carousel-item-start">
@@ -447,9 +480,9 @@
                     <div class="col-lg-9">
                         <div class="section-two-wrapper tw-mb-144 tw_fade_anim" data-delay=".3">
                             <h6 class="section-two-subtitle tw-text-xl text-uppercase text-main-three-600 tw-mb-6">AUTHENTIC TRADITIONAL FARMHOUSE EXPERIENCE</h6>
-                            <h1 class="section-two-title tw-text-15 fw-normal tw-char-animation" style="margin-bottom: 20px;">Celebrate Every New Beginning with Divine Traditions at Gokulam Farm Stay</h1>
+                            <h1 class="section-two-title tw-text-15 fw-normal tw-char-animation" style="margin-bottom: 20px;">Celebrate Every New Beginning with Divine Traditions at Gokulam Farm Stay in Shamirpet, near Hyderabad</h1>
                             <div class="tw-mt-4 text-neutral-800" style="font-size: 16px; line-height: 1.6;">
-                                <p>Begin every special occasion with the sacred blessings of Gomatha in the peaceful surroundings of Gokulam Farm Stay.</p>
+                                <p>Begin every special occasion with the sacred blessings of Gomatha in the peaceful surroundings of Gokulam Farm Stay, conveniently located in Shamirpet, near Gajwel, Telangana.</p>
                                 <p class="tw-mt-3">Experience the beauty of a traditional Gruhapravesham, witness Gomatha entering the home first, participate in a sacred Homam, and celebrate inside our authentic Manduva-style farmhouse, designed to preserve timeless heritage.</p>
                                 <p class="tw-mt-3">Surrounded by nature and filled with spiritual warmth, every celebration becomes a memorable journey of culture, peace, prosperity, and togetherness.</p>
                             </div>
@@ -673,7 +706,7 @@
                         <span><img src="images/Gokulam-icon.png" alt="marquee"></span>
                     </div>
                     <div>
-                        <h2 class="marquee-title text-black fw-normal">Gokulam Luxury Farm House</h2>
+                        <div class="marquee-title text-black fw-normal">Gokulam Luxury Farm House</div>
                     </div>
                 </div>
                 <div class="d-inline-flex align-items-center tw-gap-14 tw-pb-25">
@@ -681,7 +714,7 @@
                         <span><img src="images/Gokulam-icon.png" alt="marquee"></span>
                     </div>
                     <div>
-                        <h2 class="marquee-title text-black fw-normal">Gokulam Luxury Farm House</h2>
+                        <div class="marquee-title text-black fw-normal">Gokulam Luxury Farm House</div>
                     </div>
                 </div>
             </div>
@@ -722,7 +755,7 @@
 
                                                 <div class="text-center tw-pt-12 tw-pb-4 amenity-image-box">
 
-                                                    <img src="images/Swimming Pool.png">
+                                                    <img alt="Swimming Pool" src="images/Swimming Pool.png">
 
                                                     <div class="amenity-hover-title">
                                                         <h6 class="tw-text-2xl fw-normal">Swimming Pool</h6>
@@ -743,7 +776,7 @@
 
                                                 <div class="text-center tw-pt-12 tw-pb-4 amenity-image-box">
 
-                                                    <img src="images/22.png">
+                                                    <img alt="22" src="images/22.png">
 
                                                     <div class="amenity-hover-title">
                                                         <h6 class="tw-text-2xl fw-normal">Farmhouse</h6>
@@ -763,7 +796,7 @@
 
                                                 <div class="text-center tw-pt-12 tw-pb-4 amenity-image-box">
 
-                                                    <img src="images/23.png">
+                                                    <img alt="23" src="images/23.png">
 
                                                     <div class="amenity-hover-title">
                                                         <h6 class="tw-text-2xl fw-normal">Hall</h6>
@@ -784,7 +817,7 @@
 
                                                 <div class="text-center tw-pt-12 tw-pb-4 amenity-image-box">
 
-                                                    <img src="images/24.png">
+                                                    <img alt="24" src="images/24.png">
 
                                                     <div class="amenity-hover-title">
                                                         <h6 class="tw-text-2xl fw-normal">Outdoor Kitchen</h6>
@@ -805,7 +838,7 @@
 
                                                 <div class="text-center tw-pt-12 tw-pb-4 amenity-image-box">
 
-                                                    <img src="images/25.png">
+                                                    <img alt="25" src="images/25.png">
 
                                                     <div class="amenity-hover-title">
                                                         <h6 class="tw-text-2xl fw-normal">Indoor Kitchen</h6>
@@ -853,7 +886,7 @@
 
                                                         <div class="text-center tw-pt-12 tw-pb-4 amenity-image-box">
 
-                                                            <img src="images/Swimming Pool.png">
+                                                            <img alt="Swimming Pool" src="images/Swimming Pool.png">
 
                                                             <div class="amenity-hover-title">
                                                                 <h6 class="tw-text-2xl fw-normal">Swimming Pool</h6>
@@ -870,7 +903,7 @@
 
                                                         <div class="text-center tw-pt-12 tw-pb-4 amenity-image-box">
 
-                                                            <img src="images/22.png">
+                                                            <img alt="22" src="images/22.png">
 
                                                             <div class="amenity-hover-title">
                                                                 <h6 class="tw-text-2xl fw-normal">Farmhouse</h6>
@@ -887,7 +920,7 @@
 
                                                         <div class="text-center tw-pt-12 tw-pb-4 amenity-image-box">
 
-                                                            <img src="images/23.png">
+                                                            <img alt="23" src="images/23.png">
 
                                                             <div class="amenity-hover-title">
                                                                 <h6 class="tw-text-2xl fw-normal">Hall</h6>
@@ -904,7 +937,7 @@
 
                                                         <div class="text-center tw-pt-12 tw-pb-4 amenity-image-box">
 
-                                                            <img src="images/24.png">
+                                                            <img alt="24" src="images/24.png">
 
                                                             <div class="amenity-hover-title">
                                                                 <h6 class="tw-text-2xl fw-normal">Outdoor Kitchen</h6>
@@ -921,7 +954,7 @@
 
                                                         <div class="text-center tw-pt-12 tw-pb-4 amenity-image-box">
 
-                                                            <img src="images/25.png">
+                                                            <img alt="25" src="images/25.png">
 
                                                             <div class="amenity-hover-title">
                                                                 <h6 class="tw-text-2xl fw-normal">Indoor Kitchen</h6>
@@ -980,7 +1013,7 @@
 
                         <div class="sm-pro-card">
                             <div class="sm-pro-img">
-                                <img src="images/Swimming Pool.png">
+                                <img alt="Swimming Pool" src="images/Swimming Pool.png">
                             </div>
                             <div class="sm-pro-overlay">
                                 <div class="sm-pro-title">Swimming Pool</div>
@@ -989,7 +1022,7 @@
 
                         <div class="sm-pro-card">
                             <div class="sm-pro-img">
-                                <img src="images/22.png">
+                                <img alt="22" src="images/22.png">
                             </div>
                             <div class="sm-pro-overlay">
                                 <div class="sm-pro-title">Farmhouse</div>
@@ -998,7 +1031,7 @@
 
                         <div class="sm-pro-card">
                             <div class="sm-pro-img">
-                                <img src="images/24.png">
+                                <img alt="24" src="images/24.png">
                             </div>
                             <div class="sm-pro-overlay"></div>
                             <div class="sm-pro-title">Outdoor Kitchen</div>
@@ -1006,7 +1039,7 @@
 
                         <div class="sm-pro-card">
                             <div class="sm-pro-img">
-                                <img src="images/23.png">
+                                <img alt="23" src="images/23.png">
                             </div>
                             <div class="sm-pro-overlay"></div>
                             <div class="sm-pro-title">Hall</div>
@@ -1014,7 +1047,7 @@
 
                         <div class="sm-pro-card">
                             <div class="sm-pro-img">
-                                <img src="images/25.png">
+                                <img alt="25" src="images/25.png">
                             </div>
                             <div class="sm-pro-overlay"></div>
                             <div class="sm-pro-title">Indoor Kitchen</div>
@@ -1187,7 +1220,7 @@
                                         <!-- Button -->
 
                                         <div class="pricing-button ">
-                                            <button class="btn btn-dark w-100 py-3 text-uppercase tw-btn-hover-black bg-main-600 tw-py-5 tw-px-12 w-100 text-capitalize text-heading font-heading d-inline-flex align-items-center justify-content-center text-center tw-gap-2 tw-rounded-lg">
+                                            <button class="btn btn-dark w-100 py-3 text-uppercase tw-btn-hover-black bg-main-600 tw-py-5 tw-px-12 w-100 text-capitalize text-heading font-heading d-inline-flex align-items-center justify-content-center text-center tw-gap-2 tw-rounded-lg" data-track="booking-submission">
                                                 SUBMIT <i class="ph ph-arrow-right"></i>
                                             </button>
                                         </div>
@@ -1201,7 +1234,7 @@
                                         
                                         <div class="text-center tw-mt-8 d-flex flex-column align-items-center tw-gap-4">
                                             <div>
-                                                <a href="https://www.google.com/maps/dir/?api=1&destination=17.746358848330107,78.59612356807244" target="_blank" class="tw-btn-hover-yellow bg-main-three-600 tw-py-4 tw-px-11 text-capitalize text-white font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-md">
+                                                <a href="https://www.google.com/maps/dir/?api=1&destination=17.746358848330107,78.59612356807244" target="_blank" class="tw-btn-hover-yellow bg-main-three-600 tw-py-4 tw-px-11 text-capitalize text-white font-heading d-inline-flex align-items-center tw-gap-2 tw-rounded-md" data-track="direction-click">
                                                     <i class="fas fa-map-marker-alt"></i> Get Directions &amp; View Route Map
                                                 </a>
                                                 <p class="tw-mt-2 text-neutral-800">Click to find the distance from your current location and navigate to Gokulam Farm Stay.</p>
@@ -1397,11 +1430,11 @@
                                         <h2>Contact</h2>
                                         <div class="footer-contact-row">
                                             <span class="text-white footer-contact-icon">📞</span>
-                                            <a class="font-heading fw-normal tw-text-12 text-white hover-text-main-three-600" href="tel:+917799499616">+91 77994 99616</a>
+                                            <a class="font-heading fw-normal tw-text-12 text-white hover-text-main-three-600" href="tel:+917799499616" data-track="phone-click">+91 77994 99616</a>
                                         </div>
                                         <div class="footer-contact-row">
                                             <span class="text-white footer-contact-icon">📞</span>
-                                            <a class="font-heading fw-normal tw-text-12 text-white hover-text-main-three-600" href="tel:+919701400144">+91 97014 00144</a>
+                                            <a class="font-heading fw-normal tw-text-12 text-white hover-text-main-three-600" href="tel:+919701400144" data-track="phone-click">+91 97014 00144</a>
                                         </div>
                                         <div class="footer-contact-row">
                                             <span class="text-white footer-contact-icon">📍</span>
