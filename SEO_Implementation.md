@@ -32,7 +32,7 @@ AggregateRating (when reviews exist)
 -   Add alt text to all missing images.
 -   Rewrite H1 to include location keywords.
 -   Replace duplicate H2 headings with unique section headings.
--   Mention Shamirpet, Gajwel and Telangana naturally in headings and
+-   Mention Shamirpet and Telangana naturally in headings and
     first paragraph.
 
 ## Priority 3
