@@ -563,76 +563,59 @@
                     </div>
                 </div>
 
-                <div class="sf-cards" style="justify-content: center;">
-
-                    <div class="sf-card1" style="max-width: 600px; width: 100%;">
-                        <div class="sf-main-top-card">
-                            <div class="sf-card__top-line sf-card__top-line--green"></div>
-                            <div class="sf-badge sf-badge--green">FARM STAY</div>
-                        </div>
-                        <div class="sf-day" style="font-size: 24px;">Premium Experience</div>
-                        <div class="leaf-divider">
-                            <span class="line"></span>
-
-                            <img src="images/leaves.png" class="leaf-img" alt="leaf">
-
-                            <span class="line"></span>
-                        </div>
-                        <div class="sf-price" style="font-size: 32px;">Contact Us for Pricing</div>
-
-                        <div class="sf-info-row">
-                            <div class="sf-info-box">
-                                <div class="sf-icon sf-icon--green"><i class="fa-regular fa-clock"></i></div>
-                                <span>Check-In: 12:00 PM</span>
+                <div class="row g-4 justify-content-center" style="max-width: 1200px; margin: 0 auto;">
+                    <!-- Column 1: Pricing -->
+                    <div class="col-lg-4 col-md-6 d-flex">
+                        <div class="sf-card1 w-100 d-flex flex-column" style="padding: 30px; border-radius: 12px; height: 100%;">
+                            <h4 style="font-size: 18px; color: #1e3a2b; margin-bottom: 24px; font-weight: 600; text-align: left; border-bottom: 1px solid #e1efe1; padding-bottom: 12px;">💰 Pricing</h4>
+                            <div class="flex-grow-1 d-flex align-items-center justify-content-center">
+                                <a href="#footer" onclick="scrollToSection('footer', event)" style="font-size: 26px; font-weight: 700; color: #1e3a2b; text-align: center; text-decoration: none; cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='#3b7b59'" onmouseout="this.style.color='#1e3a2b'">Contact for Price</a>
                             </div>
-                            <div class="sf-info-box">
-                                <div class="sf-icon sf-icon--green"><i class="fa-regular fa-clock"></i></div>
-                                <span>Check-Out: 10:00 AM</span>
-                            </div>
+                            <button type="button" class="sf-btn sf-btn--green tw-py-4 tw-px-8 w-100 text-capitalize text-heading font-heading d-inline-flex align-items-center justify-content-center text-center tw-gap-2 tw-rounded-lg mt-4" onclick="openForm()">
+                                BOOK NOW <i class="ph ph-arrow-right"></i>
+                            </button>
                         </div>
-
-                        <div class="sf-people">
-                            <div class="sf-icon sf-icon--green"><i class="fa-solid fa-users"></i></div>
-                            Up to 15 People Included.
-                        </div>
-
-                        <div class="sf-features" style="text-align: left; margin: 25px 0 30px; background: #f9f9f9; padding: 20px; border-radius: 10px;">
-                            <ul style="list-style: none; padding: 0; margin: 0; font-size: 16px; line-height: 2.2; color: #4a4a4a; column-count: 2; column-gap: 20px;">
-                                <li>🏡 3 Spacious Bedrooms</li>
-                                <li>🏛️ 800 Sq. Ft. Grand Hall</li>
-                                <li>🌤️ Gazebo</li>
-                                <li>🏊 Swimming Pool</li>
-                                <li>❄️ AC</li>
-                                <li>📶 Wi-Fi</li>
-                                <li>📺 Smart TV</li>
-                                <li>🧊 Fridge</li>
-                                <li>🚿 Geyser</li>
-                                <li>🔋 20KV Generator (Power Backup)</li>
-                                <li>🎵 Music System</li>
-                                <li>🎥 Projector</li>
-                                <li>🔥 Campfire Area</li>
-                                <li>🍳 Indoor Kitchen (Self Cooking)</li>
-                                <li>🎉 2500 Sq. Yards Open Area (For Events & Parties)</li>
-                            </ul>
-
-                            <div style="margin-top: 15px; font-size: 16px; color: #4a4a4a;">
-                                <strong>🍽️ Nearby Restaurants (Home Delivery):</strong>
-                                <ul style="list-style: disc; padding-left: 20px; margin: 5px 0 0; font-size: 15px; line-height: 1.8; column-count: 2; column-gap: 20px;">
-                                    <li>Telangana Spice Kitchen</li>
-                                    <li>Raghavendra Tiffins</li>
-                                    <li>Green Aroma</li>
-                                    <li>Sree Godavari Ruchulu</li>
-                                    <li>Rajugari Vantillu</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <button type="button" class=" sf-btn sf-btn--green  tw-py-5 tw-px-12 w-100 text-capitalize text-heading font-heading 
-                            d-inline-flex align-items-center justify-content-center text-center tw-gap-2 tw-rounded-lg" onclick="openForm()">
-                            BOOK NOW <i class="ph ph-arrow-right"></i>
-                        </button>
                     </div>
 
+                    <!-- Column 2: Stay Details -->
+                    <div class="col-lg-4 col-md-6 d-flex">
+                        <div class="sf-card1 w-100 d-flex flex-column" style="padding: 30px; border-radius: 12px; height: 100%;">
+                            <h4 style="font-size: 18px; color: #1e3a2b; margin-bottom: 24px; font-weight: 600; text-align: left; border-bottom: 1px solid #e1efe1; padding-bottom: 12px;">🗓️ Stay Details</h4>
+                            <ul class="flex-grow-1" style="list-style: none; padding: 0; margin: 0; font-size: 16px; color: #445; display: flex; flex-direction: column; gap: 20px; text-align: left;">
+                                <li style="display: flex; align-items: center; gap: 12px;"><span style="font-size: 20px;">👥</span> Up to 15 Guests</li>
+                                <li style="display: flex; align-items: center; gap: 12px;"><span style="font-size: 20px;">🕒</span> Check-in 12 PM</li>
+                                <li style="display: flex; align-items: center; gap: 12px;"><span style="font-size: 20px;">🕒</span> Check-out 10 AM</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Amenities -->
+                    <div class="col-lg-4 col-md-12 d-flex">
+                        <div class="sf-card1 w-100 d-flex flex-column" style="padding: 30px; border-radius: 12px; height: 100%;">
+                            <h4 style="font-size: 18px; color: #1e3a2b; margin-bottom: 24px; font-weight: 600; text-align: left; border-bottom: 1px solid #e1efe1; padding-bottom: 12px;">⭐ Amenities</h4>
+                            <ul class="flex-grow-1" style="list-style: none; padding: 0; margin: 0; font-size: 15px; color: #445; display: flex; flex-direction: column; gap: 12px; text-align: left;">
+                                <li style="display: flex; align-items: center; gap: 10px;"><span style="width: 24px;">🏊</span> Swimming Pool</li>
+                                <li style="display: flex; align-items: center; gap: 10px;"><span style="width: 24px;">🍖</span> BBQ</li>
+                                <li style="display: flex; align-items: center; gap: 10px;"><span style="width: 24px;">❄️</span> AC</li>
+                                <li style="display: flex; align-items: center; gap: 10px;"><span style="width: 24px;">📶</span> WiFi</li>
+                                <li style="display: flex; align-items: center; gap: 10px;"><span style="width: 24px;">📽️</span> Projector</li>
+                                <li style="display: flex; align-items: center; gap: 10px;"><span style="width: 24px;">🍳</span> Kitchen</li>
+                                <li style="display: flex; align-items: center; gap: 10px;"><span style="width: 24px;">🔥</span> Campfire</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Restaurants -->
+                    <div class="col-12 mt-4">
+                        <div class="sf-card1 w-100" style="padding: 24px 30px; border-radius: 12px; background: #fff8f0; border: 1px solid #f2e3d5;">
+                            <h4 style="font-size: 16px; color: #b85b14; margin-bottom: 16px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                                🍽️ Nearby Restaurants
+                            </h4>
+                            <div style="font-size: 16px; color: #666; text-align: center; line-height: 1.8;">
+                                Telangana Sakala Kitchen &nbsp;&bull;&nbsp; Rajugari Vantillu &nbsp;&bull;&nbsp; Green Aroma
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
