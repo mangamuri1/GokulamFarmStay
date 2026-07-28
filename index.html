@@ -1305,7 +1305,7 @@
         </section>
 
         <!-- FAQ section  -->
-        <section class="faq-area tw-py-20 bg-white" id="faq">
+        <section class="faq-area tw-pt-20 tw-pb-0 bg-white" id="faq">
             <div class="container">
                 <div class="section-two-wrapper text-center tw-mb-14">
                     <h6 class="section-two-subtitle tw-text-xl text-uppercase text-neutral-800 tw-mb-6">FAQ</h6>
@@ -1761,6 +1761,69 @@
 
 
 
+    <!-- Audio Floating Button -->
+    <div class="audio_floating_btn" id="audioToggleBtn" title="Play/Pause Music">
+        <i class="fas fa-volume-mute"></i>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="output_audio.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const bgMusic = document.getElementById('bgMusic');
+            const audioBtn = document.getElementById('audioToggleBtn');
+            const audioIcon = audioBtn.querySelector('i');
+            let isPlaying = false;
+
+            const togglePlay = () => {
+                if (isPlaying) {
+                    bgMusic.pause();
+                    audioIcon.classList.remove('fa-volume-up');
+                    audioIcon.classList.add('fa-volume-mute');
+                    isPlaying = false;
+                } else {
+                    bgMusic.play().then(() => {
+                        audioIcon.classList.remove('fa-volume-mute');
+                        audioIcon.classList.add('fa-volume-up');
+                        isPlaying = true;
+                    }).catch(error => {
+                        console.log("Play prevented", error);
+                    });
+                }
+            };
+
+            audioBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); // prevent document click listener from firing if button is clicked
+                togglePlay();
+            });
+
+            // Attempt to autoplay
+            const playPromise = bgMusic.play();
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    isPlaying = true;
+                    audioIcon.classList.remove('fa-volume-mute');
+                    audioIcon.classList.add('fa-volume-up');
+                }).catch(error => {
+                    // Auto-play was prevented
+                    isPlaying = false;
+                    audioIcon.classList.remove('fa-volume-up');
+                    audioIcon.classList.add('fa-volume-mute');
+                    
+                    const playOnInteraction = () => {
+                        if (!isPlaying) {
+                            togglePlay();
+                        }
+                        document.removeEventListener('click', playOnInteraction);
+                        document.removeEventListener('touchstart', playOnInteraction);
+                    };
+                    document.addEventListener('click', playOnInteraction);
+                    document.addEventListener('touchstart', playOnInteraction);
+                });
+            }
+        });
+    </script>
 </body></html>
 
 
