@@ -1787,7 +1787,7 @@
 
                 const anims = ['fly1 18s linear infinite', 'fly2 22s linear infinite', 'fly3 25s linear infinite', 'fly4 20s linear infinite'];
                 
-                // Add butterflies and dragonflies
+                // Add butterflies
                 for (let i = 0; i < 8; i++) {
                     const w = document.createElement('div');
                     w.className = 'insect-wrap';
@@ -1798,8 +1798,7 @@
                     w.style.opacity = (0.7 + Math.random() * 0.3).toString();
                     
                     const b = document.createElement('div');
-                    // Mix of butterflies and dragonflies
-                    b.className = i % 3 === 0 ? 'insect dragonfly' : 'insect butterfly';
+                    b.className = 'insect butterfly';
                     
                     w.appendChild(b);
                     container.appendChild(w);
