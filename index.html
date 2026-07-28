@@ -1775,13 +1775,11 @@
                     .insect-wrap { position: absolute; width: 60px; height: 60px; transform-style: preserve-3d; }
                     .insect { width: 100%; height: 100%; position: relative; background-size: contain; background-repeat: no-repeat; background-position: center; }
                     .insect.butterfly { background-image: url('images/real_butterfly.png'); animation: flap-bfly 0.2s infinite alternate ease-in-out; }
-                    .insect.dragonfly { background-image: url('images/real_dragonfly.png'); animation: flap-dfly 0.05s infinite alternate ease-in-out; }
-                    @keyframes flap-bfly { 0% { transform: scaleX(1); } 100% { transform: scaleX(0.2); } }
-                    @keyframes flap-dfly { 0% { transform: scaleX(1) translateY(0); } 100% { transform: scaleX(0.8) translateY(-2px); } }
-                    @keyframes fly1 { 0% { transform: translate(-10vw, 60vh) rotateZ(30deg); } 25% { transform: translate(30vw, 30vh) rotateZ(10deg) translateY(-30px); } 50% { transform: translate(60vw, 70vh) rotateZ(40deg); } 75% { transform: translate(90vw, 20vh) rotateZ(0deg); } 100% { transform: translate(110vw, 50vh) rotateZ(30deg); } }
-                    @keyframes fly2 { 0% { transform: translate(110vw, 30vh) rotateZ(-30deg); } 25% { transform: translate(80vw, 60vh) rotateZ(-10deg) translateY(30px); } 50% { transform: translate(40vw, 20vh) rotateZ(-50deg); } 75% { transform: translate(20vw, 80vh) rotateZ(-20deg); } 100% { transform: translate(-10vw, 40vh) rotateZ(-40deg); } }
-                    @keyframes fly3 { 0% { transform: translate(20vw, 110vh) rotateZ(0deg); } 33% { transform: translate(50vw, 60vh) rotateZ(20deg) translateX(40px); } 66% { transform: translate(30vw, 20vh) rotateZ(-20deg); } 100% { transform: translate(80vw, -10vh) rotateZ(10deg); } }
-                    @keyframes fly4 { 0% { transform: translate(80vw, -10vh) rotateZ(180deg); } 50% { transform: translate(40vw, 50vh) rotateZ(160deg); } 100% { transform: translate(-10vw, 90vh) rotateZ(190deg); } }
+                    @keyframes flap-bfly { 0% { transform: rotateZ(180deg) scaleX(1); } 100% { transform: rotateZ(180deg) scaleX(0.2); } }
+                    @keyframes fly1 { 0% { transform: translate(-10vw, 60vh) rotateZ(60deg); } 25% { transform: translate(30vw, 30vh) rotateZ(50deg) translateY(-30px); } 50% { transform: translate(60vw, 70vh) rotateZ(120deg); } 75% { transform: translate(90vw, 20vh) rotateZ(70deg); } 100% { transform: translate(120vw, 50vh) rotateZ(90deg); } }
+                    @keyframes fly2 { 0% { transform: translate(120vw, 30vh) rotateZ(-60deg); } 25% { transform: translate(80vw, 60vh) rotateZ(-40deg) translateY(30px); } 50% { transform: translate(40vw, 20vh) rotateZ(-90deg); } 75% { transform: translate(20vw, 80vh) rotateZ(-60deg); } 100% { transform: translate(-10vw, 40vh) rotateZ(-90deg); } }
+                    @keyframes fly3 { 0% { transform: translate(20vw, 120vh) rotateZ(0deg); } 33% { transform: translate(50vw, 60vh) rotateZ(45deg) translateX(40px); } 66% { transform: translate(30vw, 20vh) rotateZ(-20deg); } 100% { transform: translate(80vw, -10vh) rotateZ(30deg); } }
+                    @keyframes fly4 { 0% { transform: translate(80vw, -10vh) rotateZ(180deg); } 50% { transform: translate(40vw, 50vh) rotateZ(210deg); } 100% { transform: translate(-10vw, 90vh) rotateZ(230deg); } }
                 `;
                 document.head.appendChild(style);
 
