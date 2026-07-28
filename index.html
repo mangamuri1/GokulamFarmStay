@@ -1821,7 +1821,16 @@
                     document.addEventListener('click', playOnInteraction);
                     document.addEventListener('touchstart', playOnInteraction);
                 });
-            }
+            // Pause/Play on tab switch
+            document.addEventListener('visibilitychange', () => {
+                if (document.hidden) {
+                    bgMusic.pause();
+                } else {
+                    if (isPlaying) {
+                        bgMusic.play().catch(e => console.log(e));
+                    }
+                }
+            });
         });
     </script>
 </body></html>
